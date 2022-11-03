@@ -1,0 +1,296 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FONT */
+@font-face {
+    font-family: Poor Story;
+    src: url(font/Poor_Story/PoorStory-Regular.ttf);
+}
+
+/* MAIN STYLE */
+
+/* Navbar Style */
+
+.navbar {
+    width: 1519px;
+    height: 70px;
+    background-color: rgb(43, 43, 43);
+}
+
+.logo img {
+    padding-left: 30px;
+    padding-top: 17px;
+    width: 150px;
+}
+
+.search {
+    width: 400px;
+    height: 37.5px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    left: 350px;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 0 0 orange;
+    transition: all 0.8s ease;
+}
+
+.search:hover, .icon_search img:hover {
+    box-shadow: 
+    0 3px 3px orange,
+    -4px -3px 3px orange;
+}
+
+
+.search input {
+    width: 393px;
+    height: 32px;
+    border-radius: 30px 0 0 30px;
+}
+
+.icon_search img {
+    width: 36.2px;
+    position: absolute;
+    left: 749px;
+    top: 17.1px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 0 30px 30px 0;
+    transition: all 0.8s ease-in;
+}
+
+.navbar_item {
+    position: absolute;
+    top: 27px;
+    margin-left: 1000px;
+}
+
+.navbar_item, li {
+    font-size: 17px;
+    padding-right: 70px;
+    display: inline-block;
+    color: white;
+    transition: all 1s ease-out;
+}
+
+.navbar_item li:hover {
+    font-size: 18px;
+    color: aqua;
+    text-decoration: underline;
+}
+
+/* Content Style */
+
+.bg {
+    margin-top: 13px;
+    width: 1519px;
+    height: 680px;
+    background-image: url(img/laptop-cat-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: 0 -150px;
+}
+
+.text-content {
+    position: absolute;
+    top: 340px;
+    left: 450px;
+    font-family: 'Poor Story';
+}
+
+.text-content>* {
+    color: white;
+    text-align: center;
+}
+
+.text-content .h2 {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.173);
+    position: absolute;
+    left: 160px;
+    border: solid 1px white;
+    border-radius: 30px;
+    box-shadow: 2px 2px white;
+    transition: all 0.5s ease;
+}
+
+.text-content .h2:hover {
+    width: 305px;
+    height: 35px;
+    box-shadow: 4px 4px purple;
+}
+
+.apa-namanya h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.isi .portofolio-1,
+.portofolio-2,
+.portofolio-3 {
+    width: 400px;
+    height: 400px;
+    /* border: solid 1px black; */
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 70px;
+    margin-top: 50px;
+    background-color: dodgerblue;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.isi .portofolio-1:hover, .isi .portofolio-2:hover, .isi .portofolio-3:hover{
+    width: 405px;
+    height: 405px;
+    box-shadow: 6px 6px black;
+}
+
+.isi {
+    position: absolute;
+    left: 80px;
+}
+
+.portofolio-1 .img-1, .portofolio-2 .img-1, .portofolio-3 .img-1 {
+    width: 400px;
+    height: 250px;
+    background-image: url(img/HD-wallpaper_-Windows-logo_-system_-lines_-abstraction_-backgrounds_-illustration.jpg);
+    background-size: 401px;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .portofolio-2 .img-1 {
+    width: 401px;
+    height: 250px;
+    background-image: url(img/HD-wallpaper_-Windows-logo_-system_-lines_-abstraction_-backgrounds_-illustration.jpg);
+    background-size: 401px;
+    border-radius: 20px 20px 0 0;
+}
+
+.portofolio-3 .img-1 {
+    width: 401px;
+    height: 250px;
+    background-image: url(img/HD-wallpaper_-Windows-logo_-system_-lines_-abstraction_-backgrounds_-illustration.jpg);
+    background-size: 401px;
+    border-radius: 20px 20px 0 0;
+} */
+
+.portofolio-1 .head-1, .portofolio-2 .head-2, .portofolio-3 .head-3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.portofolio-1 .desc-1, .portofolio-2 .desc-2, .portofolio-3 .desc-3 {
+    padding-left: 14px;
+    padding-right: 8px;
+    text-align: justify;
+}
+
+/* .portofolio-2 .head-2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.portofolio-2 .desc-2 {
+    padding-left: 14px;
+    padding-right: 8px;
+    text-align: justify;
+}
+
+.portofolio-3 .head-3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.portofolio-3 .desc-3 {
+    padding-left: 14px;
+    padding-right: 8px;
+    text-align: justify;
+} */
+
+.portofolio-1 .view, .portofolio-2 .view, .portofolio-3 .view {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portofolio-1 .view span, .portofolio-2 .view span, .portofolio-3 .view span{
+    font-size: 20px;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    border: solid 1px black;
+    position: absolute;
+    top: 180px;
+    left: 125px;
+}
+
+.portofolio-1 .view:hover, .portofolio-2 .view:hover, .portofolio-3 .view:hover{
+    width: 405px;
+    height: 405px;
+    opacity: 0.5;
+}
